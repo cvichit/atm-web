@@ -33,7 +33,7 @@ public class LoginController {
             model.addAttribute("greeting", "Welcome, " + matchingCustomer.getName());
         } else {
             // 3. ถ้าไม่ตรง แจ้งว่าไม่มีข้อมูล customer นี้
-            model.addAttribute("greeting", "<Can't find customer");
+            model.addAttribute("greeting", "Can't find customer");
         }
         return "home";
     }
